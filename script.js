@@ -53,4 +53,21 @@ function checkResult() {
         return;
     }
 
-    currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+    currentPlayer = currentPlayer === 'X' ? 'O' : 'X'; // Switch player
+}
+
+function resetGame() {
+    currentPlayer = 'X';
+    gameState = ['', '', '', '', '', '', '', '', ''];
+    isGameActive = true;
+
+    boxes.forEach((box) => {
+        box.textContent = '';
+    });
+}
+
+boxes.forEach((box, index) => {
+    box.addEventListener('click', () => handleBoxClick(index));
+});
+
+resetButton.addEventListener('click', resetGame);
