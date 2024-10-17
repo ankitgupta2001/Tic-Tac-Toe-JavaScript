@@ -1,8 +1,8 @@
 # Tic-Tac-Toe Game 🎮
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-![GitHub repo size](https://img.shields.io/github/repo-size/yourusername/tic-tac-toe)
-![GitHub stars](https://img.shields.io/github/stars/yourusername/tic-tac-toe?style=social)
+![GitHub repo size](https://img.shields.io/github/repo-size/ankitgupta2001/Tic-Tac-Toe-JavaScript)
+![GitHub stars](https://img.shields.io/github/stars/ankitgupta2001/Tic-Tac-Toe-JavaScript?style=social)
 
 ## Summary
 This is a simple Tic-Tac-Toe game built using HTML, CSS, and JavaScript. The game allows two players to take turns placing their marks (X and O) on a 3x3 grid, with the goal of getting three of their marks in a row (horizontally, vertically, or diagonally). The game features a reset button to start a new game and alerts to indicate when a player has won or if the game ends in a draw.
