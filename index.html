@@ -3,26 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic-Tac-Toe</title>
+    <title>Tic-Tac-Toe Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1><strong>TIC-TAC-TOE</strong></h1>
+    
+    <!-- Game Status Section -->
+    <div class="game-info">
+        <div class="current-player" id="current-player">
+            Current Player: <span class="player-symbol">X</span>
+        </div>
+        <div class="scoreboard">
+            <div class="score">X Wins: <span id="x-score">0</span></div>
+            <div class="score">Draws: <span id="draw-score">0</span></div>
+            <div class="score">O Wins: <span id="o-score">0</span></div>
+        </div>
+    </div>
+
+    <!-- Game Message -->
+    <div class="game-message" id="game-message"></div>
+    
     <main>
         <div class="container">
-            <div class="game" id="game-board">
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
+            <div class="game" id="game-board" role="grid" aria-label="Tic-Tac-Toe game board">
+                <button class="box" aria-label="Cell 1"></button>
+                <button class="box" aria-label="Cell 2"></button>
+                <button class="box" aria-label="Cell 3"></button>
+                <button class="box" aria-label="Cell 4"></button>
+                <button class="box" aria-label="Cell 5"></button>
+                <button class="box" aria-label="Cell 6"></button>
+                <button class="box" aria-label="Cell 7"></button>
+                <button class="box" aria-label="Cell 8"></button>
+                <button class="box" aria-label="Cell 9"></button>
             </div>
         </div>
-        <button id="reset-btn">Reset Game</button>
+        <button id="reset-btn" aria-label="Reset the game">Reset Game</button>
     </main>
     <script src="script.js"></script>
 </body>
